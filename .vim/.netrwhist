@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/shawn/notes'
+let g:netrw_dirhist_2='/Users/shawn/notes/clojure'
+let g:netrw_dirhist_3='/Users/shawn/tmp/base-files-nfs/files/etc/uci-defaults'
+let g:netrw_dirhist_4='/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7'
+let g:netrw_dirhist_5='/Users/shawn/.vim'
