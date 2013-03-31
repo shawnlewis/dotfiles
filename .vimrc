@@ -61,7 +61,7 @@ set hls   "highlight search results
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+\%#\@<!$/
 
-set clipboard=unnamed
+set clipboard=unnamed,unnamedplus
 " Yank text to the OS X clipboard
 "noremap <leader>y "*y
 "noremap <leader>yy "*Y
