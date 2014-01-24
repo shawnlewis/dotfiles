@@ -68,3 +68,7 @@ set clipboard=unnamed,unnamedplus
 "
 " Preserve indentation while pasting text from the OS X clipboard
 "noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
+" arduino
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
