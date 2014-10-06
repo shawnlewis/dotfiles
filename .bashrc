@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+# ~./bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -109,3 +109,11 @@ fi
 # Shawn
 set -o vi
 alias ls='ls --group-directories-first --color=auto'
+
+alias ..="cd .."
+alias ...="cd ..."
+alias ....="cd ...."
+alias .....="cd ....."
+alias ap='asnible-playbook -v'
+
+export PYTHONPATH=~/code/beep/tools/beep-packages
