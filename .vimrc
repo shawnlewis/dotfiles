@@ -10,13 +10,16 @@ set background=dark
 colorscheme solarized
 
 " Fuf
-map <Leader>t :FufFile **/<CR>
-map <Leader>r :FufBuffer **/<CR>
-let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|\/migrations\/|target\/'
+"map <Leader>t :FufFile **/<CR>
+"map <Leader>r :FufBuffer **/<CR>
+"let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|\/migrations\/|target\/'
 
 " switch tabs with option-h, option-l
 map ˙ :tabp<CR>
 map ¬ :tabn<CR>
+
+" shift-tab inserts literal tab
+" inoremap <S-tab> <C-v><Tab>
 
 " switch windows with control-hjkl
 noremap <C-h> <C-w>h
@@ -68,3 +71,22 @@ set clipboard=unnamed,unnamedplus
 "
 " Preserve indentation while pasting text from the OS X clipboard
 "noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
+set runtimepath^=~/.vim/bundle/ctrp.vim
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](openwrt).*$',
+ \ }
+
+" Search up the directory hierarchy for tags file.
+set tags=./tags;
+
+set completeopt=menuone,preview
+
+" show a navigable menu for tab completion
+set wildmenu
+set wildmode=longest,list,full
+
+" highlight tabs, trailing
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+autocmd filetype html,xml set listchars-=tab:>.
