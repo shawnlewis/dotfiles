@@ -72,6 +72,7 @@ set clipboard=unnamed,unnamedplus
 " Preserve indentation while pasting text from the OS X clipboard
 "noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
+" ctrlp
 set runtimepath^=~/.vim/bundle/ctrp.vim
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](openwrt).*$',
@@ -90,3 +91,7 @@ set wildmode=longest,list,full
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 autocmd filetype html,xml set listchars-=tab:>.
+
+" arduino
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
