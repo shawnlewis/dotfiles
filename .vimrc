@@ -5,6 +5,8 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
+set backspace=indent,eol,start
+
 set background=dark
 "let g:solarized_termcolors=256
 colorscheme solarized
@@ -64,7 +66,7 @@ set hls   "highlight search results
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+\%#\@<!$/
 
-set clipboard=unnamed,unnamedplus
+set clipboard=unnamed
 " Yank text to the OS X clipboard
 "noremap <leader>y "*y
 "noremap <leader>yy "*Y
