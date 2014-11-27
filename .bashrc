@@ -117,5 +117,6 @@ alias .....="cd ....."
 alias ap='asnible-playbook -v'
 
 export PYTHONPATH=~/code/beep/tools/beep-packages
+export EDITOR=vi
 
 eval `dircolors ~/.linux_dircolors`
