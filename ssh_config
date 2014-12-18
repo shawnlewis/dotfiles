@@ -1,0 +1,47 @@
+ControlMaster auto
+ControlPath /tmp/%r@%h:%p
+ControlPersist yes
+
+Host evilap beepap-front beepap-back
+    User root
+    IdentityFile ~/.ssh/beepnet_rsa
+
+Host beeprouter flasher1 flasher2
+    User beep
+    IdentityFile ~/.ssh/beepnet_rsa
+
+Host beep-*
+    User root
+    IdentityFile ~/code/beep/cloud/device_rsa
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+
+Host 10.1.*
+    User root
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+
+Host beep-007e98.local
+Host beep-00dd84.local
+
+Host welcome.thisisbeep.com
+    User root
+    IdentityFile ~/.ssh/server_rsa2
+
+Host reverb.beepdevices.com
+    User root
+    IdentityFile ~/.ssh/server_rsa2
+
+Host ci.beepdevices.com
+    User root
+    IdentityFile ~/.ssh/server_rsa2
+
+Host jira.beepdevices.com
+    User root
+    IdentityFile ~/.ssh/server_rsa2
+
+Host beta-staging.beepdevices.com
+    User root
+    IdentityFile ~/.ssh/server_rsa2
+
+IdentityFile ~/.ssh/id_rsa
