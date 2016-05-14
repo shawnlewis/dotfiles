@@ -116,4 +116,8 @@ set wildmode=longest,list,full
 " highlight tabs, trailing
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
-autocmd filetype html,xml set listchars-=tab:>.
+autocmd filetype go,html,xml set listchars-=tab:>.
+autocmd FileType go set nolist
+
+" show filename and ruler always
+set ls=2

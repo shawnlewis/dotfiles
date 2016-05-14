@@ -121,7 +121,22 @@ alias ....="cd ...."
 alias .....="cd ....."
 alias ap='ansible-playbook -v'
 
+alias cdgo="cd ~/gows/src/github.com/beep/beepnet/go/"
+alias cdnode="cd ~/code/beepnet/node/src"
+alias cdhal="cd ~/code/beepnet/node/src/arch/stm32l1/STM32L1xx_HAL_Driver/Src"
+alias cdcm="cd ~/code/beepnet/node/src/arch/stm32l1/CMSIS"
+
+alias cgrep='grep --color=always'
+
 export PYTHONPATH=~/code/beep/tools/beep-packages
 export EDITOR=vi
 
+export PATH=/home/shawn/go/bin:$PATH
+export GOROOT=/home/shawn/go
+export GOPATH=/home/shawn/gows
+export PATH=$GOPATH/bin:$PATH
+
 eval `dircolors ~/.linux_dircolors`
+
+# ctrl-d won't logout
+set -o ignoreeof
