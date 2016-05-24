@@ -44,4 +44,9 @@ Host beta-staging.beepdevices.com
     User root
     IdentityFile ~/.ssh/server_rsa2
 
+Host beta-local.beepdevices.com
+    User vagrant
+    Port 2222
+    IdentityFile ~/.ssh/server_rsa2
+
 IdentityFile ~/.ssh/id_rsa

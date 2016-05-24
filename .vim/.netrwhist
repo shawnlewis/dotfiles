@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/shawn/bla'
+let g:netrw_dirhist_2='/Users/shawn/code/localmarket/client/templates'
+let g:netrw_dirhist_3='/Users/shawn/code/localmarket/client/stylesheets'
+let g:netrw_dirhist_4='/Users/shawn/.config/nvim/.vim'
+let g:netrw_dirhist_5='/Users/shawn/.vim'
+let g:netrw_dirhist_6='/Users/shawn/code/beepnetweb'
+let g:netrw_dirhist_7='/Users/shawn/code'
+let g:netrw_dirhist_8='/Volumes/angrycode/code/beepnet'
