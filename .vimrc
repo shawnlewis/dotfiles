@@ -94,7 +94,6 @@ set hls   "highlight search results
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+\%#\@<!$/
 
-set clipboard=unnamed
 " Yank text to the OS X clipboard
 "noremap <leader>y "*y
 "noremap <leader>yy "*Y
@@ -155,3 +154,5 @@ autocmd filetype html,xml set listchars-=tab:>.
 " NERD-Tree
 " jump to NERD-Tree window, which is assumed to be window #1
 map <Leader>t 1<C-w><C-w>
+
+set clipboard=unnamedplus

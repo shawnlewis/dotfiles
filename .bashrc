@@ -136,7 +136,5 @@ export GOROOT=/home/shawn/go
 export GOPATH=/home/shawn/gows
 export PATH=$GOPATH/bin:$PATH
 
-eval `dircolors ~/.linux_dircolors`
-
 # ctrl-d won't logout
 set -o ignoreeof
